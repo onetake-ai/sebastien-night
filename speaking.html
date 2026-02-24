@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Sébastien Night for speaking engagements, keynotes, podcast interviews, and consulting on entrepreneurship, AI, and video marketing.">
+    <meta name="author" content="Sébastien Night">
+    <title>Speaking &amp; Consulting — Sébastien Night</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .topic-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid var(--golden-grass);
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+        }
+        .topic-card h3 {
+            color: var(--bleached-cedar);
+            margin-bottom: 0.5rem;
+        }
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .format-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--alabaster);
+            border-radius: 8px;
+        }
+        .format-item .format-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        .format-item h3 {
+            font-size: 1rem;
+            color: var(--bleached-cedar);
+            margin-bottom: 0.5rem;
+        }
+        .cta-box {
+            background: var(--bleached-cedar);
+            color: var(--alabaster);
+            border-radius: 10px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta-box h2 {
+            color: var(--golden-grass);
+            margin-bottom: 1rem;
+        }
+        .cta-box p {
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .cta-box .btn-primary {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://cdn.prod.website-files.com/64ede1cef2e95d85ddeadb1b/6752cc7dcbedac2dfdaa5cb2_logo.svg" alt="OneTake AI Logo">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="press-kit.html">Press Kit</a></li>
+                    <li><a href="works.html">Books & Films</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="ventures.html">Ventures</a></li>
+                    <li><a href="philanthropy.html">Philanthropy</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Speaking &amp; Consulting</h1>
+        <p style="color: var(--cold-turkey); margin-bottom: 2rem;">
+            Sébastien Night is an experienced, engaging speaker and a sought-after advisor on entrepreneurship,
+            AI-driven marketing, and video content strategy.
+        </p>
+
+        <!-- CTA box -->
+        <div class="cta-box">
+            <h2>Book Sébastien</h2>
+            <p>
+                Available for keynotes, workshops, podcast interviews, panel discussions, and advisory engagements.
+                Speaks in French and English.
+            </p>
+            <a href="https://www.matchmaker.fm/show-guest/sebastien-night-f73d6e" target="_blank" rel="noopener" class="btn btn-primary">
+                Book on MatchMaker.fm
+            </a>
+            <span id="speaking-email">
+                <button class="btn btn-secondary" style="color: var(--alabaster); border-color: var(--cold-turkey);"
+                        onclick="revealEmail('speaking-email')">
+                    Reveal media email
+                </button>
+            </span>
+        </div>
+
+        <!-- Formats -->
+        <section class="content-section">
+            <h2>Engagement Formats</h2>
+            <div class="format-grid">
+                <div class="format-item">
+                    <span class="format-icon">🎤</span>
+                    <h3>Keynote Speeches</h3>
+                    <p>Inspiring presentations for entrepreneurship conferences, business schools, and company events.</p>
+                </div>
+                <div class="format-item">
+                    <span class="format-icon">🎙️</span>
+                    <h3>Podcast Interviews</h3>
+                    <p>Long-form or short-form conversations on entrepreneurship, AI, video marketing, or personal development.</p>
+                </div>
+                <div class="format-item">
+                    <span class="format-icon">📰</span>
+                    <h3>Media Interviews</h3>
+                    <p>Print, online, TV, and radio interviews. See the <a href="media.html">Media Appearances</a> page for past coverage.</p>
+                </div>
+                <div class="format-item">
+                    <span class="format-icon">🎓</span>
+                    <h3>Workshops</h3>
+                    <p>Hands-on sessions on building a business, video content strategy, and leveraging AI tools.</p>
+                </div>
+                <div class="format-item">
+                    <span class="format-icon">🤝</span>
+                    <h3>Advisory &amp; Consulting</h3>
+                    <p>Strategic guidance for startups and entrepreneurs on marketing, growth, and content.</p>
+                </div>
+                <div class="format-item">
+                    <span class="format-icon">💬</span>
+                    <h3>Panel Discussions</h3>
+                    <p>Expert panelist on AI, entrepreneurship, digital marketing, and the future of content creation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics -->
+        <section class="content-section">
+            <h2>Speaking Topics</h2>
+
+            <div class="topic-card">
+                <h3>AI and the Future of Video Content</h3>
+                <p>
+                    How AI is transforming video production, making it accessible to every entrepreneur, and what this
+                    means for the future of content marketing. Insights from building OneTake AI.
+                </p>
+            </div>
+
+            <div class="topic-card">
+                <h3>Entrepreneurial Freedom — Building a Business Around Your Life</h3>
+                <p>
+                    How to build a business that serves your life — not the other way around. Drawing on 15+ years
+                    building the Mouvement des Entrepreneurs Libres and helping 300,000+ entrepreneurs across 41 countries.
+                </p>
+            </div>
+
+            <div class="topic-card">
+                <h3>Video Marketing for Entrepreneurs</h3>
+                <p>
+                    How solo entrepreneurs and small businesses can use video to grow an audience, generate leads,
+                    and sell their products — without a big team or technical skills.
+                </p>
+            </div>
+
+            <div class="topic-card">
+                <h3>Fundraising as a French Founder</h3>
+                <p>
+                    Lessons from raising $1M for a Singapore-based AI startup as a French entrepreneur. What works,
+                    what doesn't, and how to pitch across cultures.
+                </p>
+            </div>
+
+            <div class="topic-card">
+                <h3>Building an Audience and Writing a Bestselling Book</h3>
+                <p>
+                    From blog to book deal — how to build an audience from scratch, get a publisher to say yes, and
+                    turn a book into a business asset.
+                </p>
+            </div>
+
+            <div class="topic-card">
+                <h3>Reinvention — From Unexpected Origins to Serial Entrepreneurship</h3>
+                <p>
+                    A personal story of reinvention: from valedictorian in Guadeloupe, to seduction coach, to
+                    bestselling author, to AI startup founder. What makes serial entrepreneurs tick.
+                </p>
+            </div>
+        </section>
+
+        <!-- Languages and Logistics -->
+        <section class="content-section">
+            <h2>Logistics</h2>
+            <ul style="list-style: none;">
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Languages:</strong> French (native), English (professional)</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Formats:</strong> In-person and remote / virtual</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Location:</strong> Based between France and Singapore — available internationally</li>
+                <li style="padding: 0.5rem 0;"><strong>Media assets:</strong> <a href="press-kit.html">Full press kit available here</a></li>
+            </ul>
+        </section>
+
+        <!-- Past appearances teaser -->
+        <section class="content-section">
+            <h2>Past Media Appearances</h2>
+            <p>
+                Sébastien has appeared on TF1, M6, in Les Echos, Le Nouvel Observateur, FrenchWeb, and many other
+                outlets. He is a natural and engaging communicator comfortable in long-form conversations as well as
+                live broadcast settings.
+            </p>
+            <p>
+                <a href="media.html">See the full media appearances page →</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sébastien Night. All rights reserved.</p>
+        <p>
+            <a href="https://onetake.ai" target="_blank" rel="noopener">OneTake AI</a> |
+            <a href="press-kit.html">Press Kit</a> |
+            <a href="https://www.linkedin.com/in/sebastiennight/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="version">v1.0</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
