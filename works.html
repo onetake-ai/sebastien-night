@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Books, films, and publications by Sébastien Night — author, producer, and founder of OneTake AI.">
+    <meta name="author" content="Sébastien Night">
+    <title>Books, Films &amp; Publications — Sébastien Night</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .book-card {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+        .book-cover {
+            width: 100px;
+            min-width: 100px;
+            height: 140px;
+            background: var(--alabaster);
+            border: 2px solid var(--cold-turkey);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: var(--cold-turkey);
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .book-info h3 {
+            color: var(--golden-grass);
+            margin-bottom: 0.5rem;
+        }
+        .book-links {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .book-links a {
+            font-size: 0.85rem;
+            padding: 0.3rem 0.75rem;
+            border: 1.5px solid var(--golden-grass);
+            border-radius: 4px;
+            color: var(--bleached-cedar);
+            transition: all 0.2s;
+        }
+        .book-links a:hover {
+            background: var(--golden-grass);
+            color: var(--white);
+        }
+        .review-quote {
+            border-left: 4px solid var(--golden-grass);
+            padding: 0.75rem 1rem;
+            margin: 1rem 0;
+            background: var(--alabaster);
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            .book-card {
+                flex-direction: column;
+            }
+            .book-cover {
+                width: 80px;
+                min-width: 80px;
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://cdn.prod.website-files.com/64ede1cef2e95d85ddeadb1b/6752cc7dcbedac2dfdaa5cb2_logo.svg" alt="OneTake AI Logo">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="press-kit.html">Press Kit</a></li>
+                    <li><a href="works.html">Books & Films</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="ventures.html">Ventures</a></li>
+                    <li><a href="philanthropy.html">Philanthropy</a></li>
+                    <li><a href="speaking.html">Speaking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Books, Films &amp; Publications</h1>
+        <p style="color: var(--cold-turkey); margin-bottom: 2rem;">
+            Complete bibliography and filmography of Sébastien Night.
+        </p>
+
+        <!-- Navigation anchors -->
+        <nav style="margin-bottom: 2rem; font-size: 0.95rem;">
+            <a href="#books" style="margin-right: 1.5rem;">Books</a>
+            <a href="#filmography">Filmography</a>
+            <a href="#prefaces" style="margin-left: 1.5rem;">Prefaces &amp; Contributions</a>
+            <a href="#dvds" style="margin-left: 1.5rem;">DVDs</a>
+        </nav>
+
+        <!-- Books -->
+        <section class="content-section" id="books">
+            <h2>Books</h2>
+
+            <div class="book-card">
+                <div class="book-cover">Cover<br><small>(add image)</small></div>
+                <div class="book-info">
+                    <h3>Profession: Entrepreneur Libre</h3>
+                    <p><strong>Publisher:</strong> Alisio / Albin Michel</p>
+                    <p>
+                        The definitive practical guide for aspiring entrepreneurs. Covers how to find your profitable
+                        idea, conduct market research, land your first clients, raise the capital you need, and
+                        acquire all the resources to launch and sustain your own business. A companion to the
+                        Mouvement des Entrepreneurs Libres.
+                    </p>
+                    <div class="book-links">
+                        <a href="https://www.amazon.fr/stores/author/B01M72KUF4/about" target="_blank" rel="noopener">Amazon</a>
+                        <a href="https://www.audible.fr/author/Sebastien-Night/B01M72KUF4" target="_blank" rel="noopener">Audible</a>
+                        <a href="https://www.audiolib.fr/auteur/sebastien-night/" target="_blank" rel="noopener">Audiolib</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">Cover<br><small>(add image)</small></div>
+                <div class="book-info">
+                    <h3>Le Secret des Entrepreneurs Libres</h3>
+                    <p><strong>ISBN:</strong> 978-2953514667</p>
+                    <p>
+                        Sébastien Night's earlier landmark book on entrepreneurial freedom, with over
+                        245 reader reviews on Amazon France.
+                    </p>
+                    <div class="review-quote">
+                        "245+ reader reviews on Amazon France — one of the most reviewed entrepreneurship books in French."
+                    </div>
+                    <div class="book-links">
+                        <a href="https://www.amazon.fr/Secret-Entrepreneurs-Libres-S%C3%A9bastien-Night/dp/295351466X" target="_blank" rel="noopener">Amazon (245+ reviews)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audiobooks -->
+        <section class="content-section">
+            <h2>Audiobooks</h2>
+            <p>Sébastien's books are available in audiobook format across major platforms.</p>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--alabaster);">
+                    <strong>Audible (France):</strong>
+                    <a href="https://www.audible.fr/author/Sebastien-Night/B01M72KUF4" target="_blank" rel="noopener">audible.fr — Sébastien Night author page</a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--alabaster);">
+                    <strong>Audiolib:</strong>
+                    <a href="https://www.audiolib.fr/auteur/sebastien-night/" target="_blank" rel="noopener">audiolib.fr — Sébastien Night</a>
+                </li>
+                <li style="padding: 0.6rem 0;">
+                    <strong>Google Play Livres (excerpt):</strong>
+                    <a href="https://www.youtube.com/watch?v=dNRpK28eZ0M" target="_blank" rel="noopener">Audiobook excerpt on YouTube</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Prefaces and Contributions -->
+        <section class="content-section" id="prefaces">
+            <h2>Prefaces &amp; Contributions</h2>
+
+            <div class="book-card">
+                <div class="book-cover">Cover<br><small>(add image)</small></div>
+                <div class="book-info">
+                    <h3>Launch — French Edition (Preface)</h3>
+                    <p><strong>Author:</strong> Jeff Walker &nbsp;|&nbsp; <strong>Publisher:</strong> Éditions Leduc</p>
+                    <p>
+                        Sébastien Night wrote the preface for the landmark French-language edition of Jeff Walker's
+                        <em>Launch</em>, the defining book on the Product Launch Formula used by thousands of
+                        online entrepreneurs worldwide.
+                    </p>
+                    <div class="book-links">
+                        <a href="https://www.editionsleduc.com/auteur/1208/sebastien-night" target="_blank" rel="noopener">Éditions Leduc</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filmography -->
+        <section class="content-section" id="filmography">
+            <h2>Filmography</h2>
+            <p>
+                <strong>IMDb profile:</strong>
+                <a href="https://www.imdb.com/fr/name/nm17789888/" target="_blank" rel="noopener">imdb.com/name/nm17789888</a>
+            </p>
+
+            <div class="book-card" style="margin-top: 1.5rem;">
+                <div class="book-cover" style="height: 100px;">Film<br>Poster<br><small>(add image)</small></div>
+                <div class="book-info">
+                    <h3>Feature Film (2020s)</h3>
+                    <p><strong>Role:</strong> Producer</p>
+                    <p>
+                        Sébastien Night's producing credit on IMDb. Audience reviews and behind-the-scenes content
+                        available online.
+                    </p>
+                    <div class="book-links">
+                        <a href="https://www.imdb.com/fr/title/tt38712897/" target="_blank" rel="noopener">IMDb</a>
+                        <a href="https://www.youtube.com/watch?v=988wSLk9k30" target="_blank" rel="noopener">Audience reviews (YouTube)</a>
+                        <a href="https://www.youtube.com/watch?v=JGTljwLhqds" target="_blank" rel="noopener">Behind the scenes (YouTube)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DVDs -->
+        <section class="content-section" id="dvds">
+            <h2>DVDs &amp; Early Video Productions</h2>
+            <p>
+                In the late 2000s, Sébastien Night produced instructional DVDs on seduction and social confidence,
+                which were sold through his brand and on Amazon France.
+            </p>
+
+            <div class="book-card" style="margin-top: 1.5rem;">
+                <div class="book-cover" style="height: 100px;">DVD<br>Cover<br><small>(add image)</small></div>
+                <div class="book-info">
+                    <h3>Séduire sans un mot</h3>
+                    <p><strong>Format:</strong> DVD</p>
+                    <p>
+                        An early video production on non-verbal communication and seduction, sold on Amazon France.
+                    </p>
+                    <div class="book-links">
+                        <a href="https://www.amazon.fr/dp/B002CSBGZ6#customerReviews" target="_blank" rel="noopener">Amazon (reviews)</a>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 1rem;">
+                <em>See the <a href="archive.html">Early Work Archive</a> for more on this period of Sébastien's career.</em>
+            </p>
+        </section>
+
+        <!-- Where to Find -->
+        <section class="content-section">
+            <h2>Where to Find Sébastien's Books</h2>
+            <p>Available at all major French book retailers:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;">
+                <a href="https://www.amazon.fr/stores/author/B01M72KUF4/about" target="_blank" rel="noopener" class="btn btn-secondary">Amazon.fr</a>
+                <a href="https://www.audible.fr/author/Sebastien-Night/B01M72KUF4" target="_blank" rel="noopener" class="btn btn-secondary">Audible.fr</a>
+                <a href="https://www.audiolib.fr/auteur/sebastien-night/" target="_blank" rel="noopener" class="btn btn-secondary">Audiolib</a>
+                <a href="https://www.editionsleduc.com/auteur/1208/sebastien-night" target="_blank" rel="noopener" class="btn btn-secondary">Éditions Leduc</a>
+            </div>
+            <p style="margin-top: 1rem; color: var(--cold-turkey); font-size: 0.9rem;">
+                Also available at Fnac, Hachette, and other major French book retailers.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sébastien Night. All rights reserved.</p>
+        <p>
+            <a href="https://onetake.ai" target="_blank" rel="noopener">OneTake AI</a> |
+            <a href="press-kit.html">Press Kit</a> |
+            <a href="https://www.linkedin.com/in/sebastiennight/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="version">v1.0</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
