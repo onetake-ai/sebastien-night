@@ -24,9 +24,15 @@
         }
         .format-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin: 1.5rem 0;
+            max-width: 1000px;
+        }
+        @media (min-width: 900px) {
+            .format-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         .format-item {
             text-align: center;
@@ -212,10 +218,13 @@
                     <strong>Languages:</strong> Polyglot — Native: French & Guadeloupean Creole; Trilingual: English; Fully professionally proficient: Spanish & Portuguese; Limited: Italian; Elementary: Russian
                 </li>
                 <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);">
-                    <strong>Presented sold-out conferences and consulted with clients in:</strong> French, English, Spanish, and Portuguese
+                    <strong>Presented sold-out conferences in:</strong> French, English, Spanish, and Portuguese
+                </li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);">
+                    <strong>Consulted with clients in:</strong> French, English, Spanish, and Portuguese
                 </li>
                 <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Formats:</strong> In-person and remote / virtual</li>
-                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Location:</strong> Based between France and Singapore — available internationally</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--alabaster);"><strong>Location:</strong> Based in the UAE, Europe, and Singapore — available internationally</li>
                 <li style="padding: 0.5rem 0;"><strong>Media assets:</strong> <a href="press-kit.html">Full press kit available here</a></li>
             </ul>
         </section>
@@ -300,7 +309,7 @@
             <a href="https://www.linkedin.com/in/sebastiennight/" target="_blank" rel="noopener">LinkedIn</a> |
             <a href="https://www.crunchbase.com/person/sebastien-night" target="_blank" rel="noopener">Crunchbase</a>
         </p>
-        <p class="version">v1.0</p>
+        
     </footer>
 
     <script src="js/script.js"></script>
