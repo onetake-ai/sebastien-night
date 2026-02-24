@@ -54,11 +54,6 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="https://cdn.prod.website-files.com/64ede1cef2e95d85ddeadb1b/6752cc7dcbedac2dfdaa5cb2_logo.svg" alt="OneTake AI Logo">
-                </a>
-            </div>
             <button class="menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -70,8 +65,8 @@
                     <li><a href="bio.html">Bio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="press-kit.html">Press Kit</a></li>
+                    <li><a href="in-the-press.html">In the Press</a></li>
                     <li><a href="works.html">Books & Films</a></li>
-                    <li><a href="media.html">Media</a></li>
                     <li><a href="ventures.html">Ventures</a></li>
                     <li><a href="philanthropy.html">Philanthropy</a></li>
                     <li><a href="speaking.html">Speaking</a></li>
@@ -115,40 +110,54 @@
             </div>
         </section>
 
-        <!-- Photos and Links -->
+        <!-- Photos -->
         <section class="content-section">
-            <h2>Photos &amp; Documentation</h2>
-            <p>Documentation from the school construction and community project:</p>
-            <ul style="list-style: none; margin-top: 1rem;">
-                <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--alabaster);">
-                    <a href="https://www.facebook.com/photo/?fbid=1068589036649401&set=a.121747568000224" target="_blank" rel="noopener">
-                        📷 School photo — Facebook (1)
-                    </a>
-                </li>
-                <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--alabaster);">
-                    <a href="https://www.facebook.com/VillageImpactKenya/posts/2219154838259476" target="_blank" rel="noopener">
-                        📷 Village Impact Kenya — Facebook post
-                    </a>
-                </li>
-                <li style="padding: 0.6rem 0;">
+            <h2>Photos from the School</h2>
+            <div class="kenya-gallery">
+                <figure class="kenya-gallery-item">
                     <a href="https://www.facebook.com/photo/?fbid=646063648901944&set=a.121747568000224" target="_blank" rel="noopener">
-                        📷 School photo — Facebook (2)
+                        <img src="images/philanthropy/barakashalom-school.jpg" alt="Baraka Shalom Primary School building" loading="lazy"
+                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect fill=%22%23F8F7F7%22 width=%22300%22 height=%22200%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 font-family=%22Montserrat%22 font-size=%2214%22 fill=%22%23D1B0B3%22>School building</text></svg>'">
                     </a>
-                </li>
-            </ul>
+                    <figcaption>Baraka Shalom Primary School building</figcaption>
+                </figure>
+
+                <figure class="kenya-gallery-item">
+                    <a href="https://www.facebook.com/VillageImpactKenya/posts/2219154838259476" target="_blank" rel="noopener">
+                        <img src="images/philanthropy/barakashalom-students.jpg" alt="Students at Baraka Shalom Primary School" loading="lazy"
+                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect fill=%22%23F8F7F7%22 width=%22300%22 height=%22200%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 font-family=%22Montserrat%22 font-size=%2214%22 fill=%22%23D1B0B3%22>Students</text></svg>'">
+                    </a>
+                    <figcaption>Students at Baraka Shalom Primary School</figcaption>
+                </figure>
+
+                <figure class="kenya-gallery-item">
+                    <a href="https://www.facebook.com/photo/?fbid=1068589036649401&set=a.121747568000224" target="_blank" rel="noopener">
+                        <img src="images/philanthropy/barakashalom-sebastien.jpg" alt="Sébastien Night at Baraka Shalom Primary School" loading="lazy"
+                             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect fill=%22%23F8F7F7%22 width=%22300%22 height=%22200%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 font-family=%22Montserrat%22 font-size=%2214%22 fill=%22%23D1B0B3%22>Sébastien at school</text></svg>'">
+                    </a>
+                    <figcaption>Sébastien Night at Baraka Shalom Primary School</figcaption>
+                </figure>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--cold-turkey);">
+                📁 To add photos: place the 3 images in <code>images/philanthropy/</code> folder as
+                <code>barakashalom-school.jpg</code>, <code>barakashalom-students.jpg</code>, and <code>barakashalom-sebastien.jpg</code>
+            </p>
         </section>
 
         <!-- Village Impact -->
         <section class="content-section">
-            <h2>About Village Impact Kenya</h2>
+            <h2>About Village Impact</h2>
             <p>
-                Village Impact Kenya is a charitable organization that works with communities in rural Kenya to build
+                Village Impact is a charitable organization that works with communities in rural Kenya to build
                 schools and improve access to education. They partner with individual donors and organizations to
                 fund construction projects, teacher training, and community development initiatives.
             </p>
             <p>
-                <a href="https://www.facebook.com/VillageImpactKenya" target="_blank" rel="noopener">
-                    Learn more about Village Impact Kenya →
+                <a href="https://villageimpact.com/" target="_blank" rel="noopener" class="btn btn-primary" style="display: inline-block; margin-right: 1rem;">
+                    Visit Village Impact website →
+                </a>
+                <a href="https://www.facebook.com/VillageImpactKenya" target="_blank" rel="noopener" class="btn btn-secondary" style="display: inline-block;">
+                    Village Impact Kenya on Facebook
                 </a>
             </p>
         </section>
@@ -157,9 +166,10 @@
     <footer>
         <p>&copy; 2026 Sébastien Night. All rights reserved.</p>
         <p>
-            <a href="https://onetake.ai" target="_blank" rel="noopener">OneTake AI</a> |
+            <a href="https://www.onetake.ai" target="_blank" rel="noopener">OneTake AI</a> |
             <a href="press-kit.html">Press Kit</a> |
-            <a href="https://www.linkedin.com/in/sebastiennight/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/sebastiennight/" target="_blank" rel="noopener">LinkedIn</a> |
+            <a href="https://www.crunchbase.com/person/sebastien-night" target="_blank" rel="noopener">Crunchbase</a>
         </p>
         <p class="version">v1.0</p>
     </footer>

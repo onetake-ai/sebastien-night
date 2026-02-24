@@ -115,3 +115,42 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(script);
     }
 });
+
+// Press Timeline Filtering
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const timelineItems = document.querySelectorAll('.press-timeline-item');
+
+    if (filterButtons.length > 0 && timelineItems.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                // Filter timeline items
+                timelineItems.forEach(item => {
+                    const itemType = item.getAttribute('data-type');
+                    if (filter === 'all' || itemType === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+
+                // Show/hide year headers based on visible items
+                const yearSections = document.querySelectorAll('.year-section');
+                yearSections.forEach(section => {
+                    const visibleItems = section.querySelectorAll('.press-timeline-item:not(.hidden)');
+                    if (visibleItems.length === 0) {
+                        section.style.display = 'none';
+                    } else {
+                        section.style.display = 'block';
+                    }
+                });
+            });
+        });
+    }
+});
