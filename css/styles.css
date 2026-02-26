@@ -530,9 +530,14 @@ footer a {
 }
 
 .press-outlet {
-    min-width: 120px;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    flex-shrink: 0;
     font-weight: 700;
     color: var(--golden-grass);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .press-content {
