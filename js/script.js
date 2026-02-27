@@ -130,8 +130,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
 
-                // Filter timeline items
+                // Filter timeline items (skip items marked data-no-filter="true")
                 timelineItems.forEach(item => {
+                    if (item.getAttribute('data-no-filter') === 'true') return;
                     const itemType = item.getAttribute('data-type');
                     if (filter === 'all' || itemType === filter) {
                         item.classList.remove('hidden');
