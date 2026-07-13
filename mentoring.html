@@ -384,14 +384,19 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script>
-    (function () {
-        var baseDate = Date.UTC(2026, 6, 10);
-        var daysSince = Math.floor((Date.now() - baseDate) / 86400000);
-        var n1 = 11 + daysSince;
-        var n2 = 12 + daysSince;
-        var container = document.getElementById('tg-dynamic');
-        [n1, n2].forEach(function (n) {
+      <script>
+        (function () {
+          // July 10, 2026 — JS months are 0-indexed: 6 = July
+          var baseDate = Date.UTC(2026, 6, 13);
+          var daysSince = Math.floor((Date.now() - baseDate) / 86400000);
+    
+          var numberOfRecentPostsToShow = 4;
+          var offsetIdsBy = 12;
+          
+          var container = document.getElementById('tg-dynamic');
+          
+          for (var i = 0; i < numberOfRecentPostsToShow; i++) {
+            var n = offsetIdsBy + daysSince + i;
             var wrapper = document.createElement('div');
             wrapper.className = 'tg-post';
             var s = document.createElement('script');
@@ -401,7 +406,7 @@
             s.setAttribute('data-width', '100%');
             wrapper.appendChild(s);
             container.appendChild(wrapper);
-        });
+          }
 
         function syncHeight() {
             var left = document.querySelector('.mentoring-left');
