@@ -54,4 +54,4 @@ Every page follows this pattern:
 
 ## Mentoring page
 
-The mentoring.html page embeds Telegram post previews via `https://telegram.org/js/telegram-widget.js?24`. An inline script dynamically adds recent posts based on the current date (base date: July 10, 2026, post #11 onward).
+The mentoring.html page embeds Telegram post previews via `https://telegram.org/js/telegram-widget.js?24`. Posts are loaded from the `POST_IDS` array defined in the inline script at the bottom of `<body>` — edit that array to change which posts are shown and in which order.
